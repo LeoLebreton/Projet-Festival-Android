@@ -1,5 +1,7 @@
 package org.joliverie.sio.festival01.metier;
 
+import java.util.ArrayList;
+
 public class Representation {
 
     private String id;
@@ -27,16 +29,15 @@ public class Representation {
     }
 
     @Override
+    /*public String toString() {
+        return "Representation " + id;
+    }*/
     public String toString() {
-        return "Representation{" +
-                "id='" + id + '\'' +
-                ", date='" + dateRepres + '\'' +
-                ", heure_debut='" + heureDebut + '\'' +
-                ", heure_fin='" + heureFin + '\'' +
-                ", groupe=" + groupe +
-                ", lieu=" + lieu +
-                '}';
+        return "Date : " + dateRepres + '\n' +
+                "Lieu : " + lieu + '\n' +
+                "Groupe : " + groupe;
     }
+
 
     public String getId() {
         return id;
